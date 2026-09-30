@@ -1,0 +1,41 @@
+{
+  "pdf_path": "Anillos.pdf",
+
+  "deeplake": {
+    "dataset_path": "deeplake_db/anillos",
+    "read_only": true,
+    "overwrite": true
+  },
+
+  "embedding": {
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "device": "cpu",
+    "normalize_embeddings": true
+  },
+
+  "splitter": {
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "separators": ["\n\n", "\n", ".", " ", ""]
+  },
+
+  "retrieval": {
+    "k": 3
+  },
+
+  "llm": {
+    "api_base": "https://openrouter.ai/api/v1",
+    "model_name": "cohere/north-mini-code:free",
+    "temperature": 0.5
+  },
+
+  "memory": {
+    "type": "summary",
+    "enabled": true,
+    "retain_across_sessions": false,
+    "summary_model": "cohere/north-mini-code:free",
+    "max_summary_length": 5000
+  },
+
+  "system_instruction": "Eres el fan mas experto en el señor de los anillos y no respondes fuera de la base de conocimiento, en ese caso, dile al usuario que se dirija a otro chat. Responde unicamete con la informacion de la base."
+}

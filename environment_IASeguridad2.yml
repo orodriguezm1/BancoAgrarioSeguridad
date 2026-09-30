@@ -1,0 +1,41 @@
+name: IASeguridad2
+channels:
+ - conda-forge
+ - defaults
+dependencies:
+ - python=3.12.9
+ - pip=26.0.1
+ - pip:
+     - aioboto3==15.4.0
+     - aiobotocore==2.25.0
+     - aiofiles==25.1.0
+     - aiohttp==3.13.1
+     - boto3==1.40.49
+     - colorama==0.4.6
+     - deeplake==3.9.3
+     - google-api-python-client==2.198.0
+     - google-auth==2.56.2
+     - google-auth-httplib2==0.4.0
+     - google-auth-oauthlib==1.4.0
+     - langchain==0.3.27
+     - langchain-community==0.3.30
+     - langchain-core==0.3.76
+     - langchain-huggingface==0.3.1
+     - langchain-openai==0.3.33
+     - langchain-text-splitters==0.3.11
+     - matplotlib==3.10.9
+     - numpy==1.26.4
+     - openai==1.109.1
+     - pandas==3.0.2
+     - pillow==10.2.0
+     - pypdf==6.10.2
+     - python-dotenv==1.1.1
+     - requests==2.33.1
+     - scikit-learn==1.7.2
+     - scipy==1.16.2
+     - sentence-transformers==5.1.2
+     - tiktoken==0.12.0
+     - torch==2.2.2
+     - tqdm==4.67.3
+     - transformers==4.57.1
+     - pyyaml==6.0.3
